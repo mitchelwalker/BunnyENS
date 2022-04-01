@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$body-color: #282a36;
+$text-color: #6272a4;
+$header-color: #bd93f9;
+$table-header-color: #50fa7b;
+$table-header-color: #50fa7b;
+$table-element: #ff79c6;
+$table-element-odd: #ffb86c;
+$table-element-hover: #8be9fd;
+
+html,
+body {
+  background: $body-color !important;
+  color: $text-color;
+  padding: 20px 20px 60px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  background: $body-color !important;
+}
+
+nav .navbar-brand {
+  color: $header-color
+}
+nav .nav-link {
+  color: $text-color !important
+}
+h1, title {
+  color: $header-color
+}
+
+thead, tfoot, td, th {
+  color: $table-header-color;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  color: $table-element-hover !important;
+} 
+
+.table-striped > tbody > tr:nth-of-type(even) > * {
+  color: $table-element;
+}
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  color: $table-element !important
+}
+
+.btn {
+  width: auto;
+}
+
+table {
+  table-layout: fixed;
+}
+td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+span {
+  color: $header-color
+}
+$theme-colors: (
+  "info": #6272a4,
+  "danger": #ff4136,
+  "primary": #50fa7b
+);
